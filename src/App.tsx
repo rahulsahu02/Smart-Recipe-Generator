@@ -1,11 +1,16 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 
 // --- TYPES ---
+interface Ingredient {
+  name: string;
+  quantity: string;
+}
+
 interface Recipe {
-  id: number;
+  id: number | string;
   title: string;
   imageUrl: string;
-  ingredients: string[];
+  ingredients: (string | Ingredient)[];
   cookingTime: number;
   difficulty: "Easy" | "Medium" | "Hard";
   dietary: string[];
@@ -70,21 +75,58 @@ const UsersIcon = () => (
     </svg>
 );
 
+const HeartIcon = ({ filled }: { filled: boolean }) => (
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill={filled ? "currentColor" : "none"} stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+  </svg>
+);
+
+const HomeIcon = () => (
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+    <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+    <polyline points="9 22 9 12 15 12 15 22"></polyline>
+  </svg>
+);
+
 
 // --- COMPONENTS ---
 
-const Header = () => (
-  <header className="bg-white/80 backdrop-blur-sm shadow-sm fixed top-0 left-0 right-0 z-10">
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div className="flex items-center justify-center h-16">
-        <div className="flex items-center space-x-2">
-          <UtensilsIcon />
-          <h1 className="text-2xl font-bold text-gray-800">Smart Recipe Generator</h1>
-        </div>
-      </div>
-    </div>
-  </header>
-);
+const Header = ({ token, setToken, setPage }: { token: string | null, setToken: (token: string | null) => void, setPage: (page: string) => void }) => {
+    const handleLogout = () => {
+        setToken(null);
+        localStorage.removeItem('token');
+        setPage('login');
+    };
+
+    return (
+        <header className="bg-white/80 backdrop-blur-sm shadow-sm fixed top-0 left-0 right-0 z-10">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div className="flex items-center justify-between h-16">
+                    <div className="flex items-center space-x-2 cursor-pointer" onClick={() => setPage('home')}>
+                        <UtensilsIcon />
+                        <h1 className="text-2xl font-bold text-gray-800">Smart Recipe Generator</h1>
+                    </div>
+                    <div>
+                        {token ? (
+                            <div className="flex items-center space-x-4">
+                                <button onClick={() => setPage('home')} className="text-gray-600 hover:text-emerald-600" title="Home">
+                                    <HomeIcon />
+                                </button>
+                                <button onClick={() => setPage('favorites')} className="text-gray-600 hover:text-emerald-600">Favorites</button>
+                                <button onClick={handleLogout} className="text-gray-600 hover:text-emerald-600">Logout</button>
+                            </div>
+                        ) : (
+                            <>
+                                <button onClick={() => setPage('login')} className="text-gray-600 hover:text-emerald-600 mr-4">Login</button>
+                                <button onClick={() => setPage('signup')} className="text-gray-600 hover:text-emerald-600">Signup</button>
+                            </>
+                        )}
+                    </div>
+                </div>
+            </div>
+        </header>
+    );
+};
 
 interface HomePageProps {
     onFindRecipes: (ingredients: string[], dietary: string[], servings: number, cuisine: string) => void;
@@ -298,20 +340,30 @@ const HomePage = ({ onFindRecipes }: HomePageProps) => {
 interface RecipeCardProps {
     recipe: Recipe;
     onClick: () => void;
+    onFavorite: (recipe: Recipe) => void;
+    isFavorite: boolean;
+    token: string | null;
 }
 
-const RecipeCard = ({ recipe, onClick }: RecipeCardProps) => (
-    <div onClick={onClick} className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1 cursor-pointer animate-fade-in">
-        <img className="h-48 w-full object-cover" src={`https://placehold.co/600x400/52525b/FFFFFF?text=${recipe.title.replace(/\s/g, '+')}`} alt={recipe.title} />
-        <div className="p-6">
+const RecipeCard = ({ recipe, onClick, onFavorite, isFavorite, token }: RecipeCardProps) => (
+    <div className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1 cursor-pointer animate-fade-in">
+        <div className="relative">
+            <img className="h-48 w-full object-cover" src={recipe.imageUrl || `https://placehold.co/600x400/52525b/FFFFFF?text=${recipe.title.replace(/\s/g, '+')}`} alt={recipe.title} />
+            {token && (
+                <button onClick={(e) => { e.stopPropagation(); onFavorite(recipe); }} className="absolute top-2 right-2 bg-white/70 p-2 rounded-full text-red-500 hover:bg-white">
+                    <HeartIcon filled={isFavorite} />
+                </button>
+            )}
+        </div>
+        <div onClick={onClick} className="p-6">
             <h3 className="text-xl font-bold text-gray-800 mb-2">{recipe.title}</h3>
             <p className="text-gray-600 text-sm mb-4 h-10 overflow-hidden">{recipe.description}</p>
             <div className="flex items-center justify-between text-gray-600 text-sm">
                 <div className="flex items-center gap-2"><ClockIcon /><span>{recipe.cookingTime} min</span></div>
-                 <div className="flex items-center gap-2"><UsersIcon /><span>{recipe.servings || 'N/A'}</span></div>
+                <div className="flex items-center gap-2"><UsersIcon /><span>{recipe.servings || 'N/A'}</span></div>
             </div>
-             <div className="mt-4">
-                 <span className={`px-3 py-1 text-xs font-semibold rounded-full ${recipe.difficulty === 'Easy' ? 'bg-green-100 text-green-800' : recipe.difficulty === 'Medium' ? 'bg-yellow-100 text-yellow-800' : 'bg-red-100 text-red-800'}`}>{recipe.difficulty}</span>
+            <div className="mt-4">
+                <span className={`px-3 py-1 text-xs font-semibold rounded-full ${recipe.difficulty === 'Easy' ? 'bg-green-100 text-green-800' : recipe.difficulty === 'Medium' ? 'bg-yellow-100 text-yellow-800' : 'bg-red-100 text-red-800'}`}>{recipe.difficulty}</span>
             </div>
         </div>
     </div>
@@ -324,10 +376,10 @@ interface RecipeModalProps {
 
 const RecipeModal = ({ recipe, onClose }: RecipeModalProps) => {
     return (
-        <div className="fixed inset-0 bg-black/60 z-50 flex justify-center items-center p-4 animate-fade-in-fast">
+        <div className="fixed inset-0 bg-black/60 z-50 flex justify-center items-center p-4 animate-fade-in-fast" onClick={onClose}>
             <div className="bg-white rounded-2xl shadow-2xl w-full max-w-3xl max-h-[90vh] overflow-y-auto relative" onClick={(e) => e.stopPropagation()}>
                 <button onClick={onClose} className="absolute top-4 right-4 text-gray-500 hover:text-gray-800 bg-gray-100 rounded-full p-2 z-10"><XIcon className="w-6 h-6" /></button>
-                <img className="h-64 w-full object-cover rounded-t-2xl" src={`https://placehold.co/1200x800/52525b/FFFFFF?text=${recipe.title.replace(/\s/g, '+')}`} alt={recipe.title} />
+                <img className="h-64 w-full object-cover rounded-t-2xl" src={recipe.imageUrl || `https://placehold.co/1200x800/52525b/FFFFFF?text=${recipe.title.replace(/\s/g, '+')}`} alt={recipe.title} />
                 <div className="p-8">
                     <h2 className="text-3xl font-bold text-gray-800 mb-2">{recipe.title}</h2>
                     <p className="text-gray-600 mb-6">{recipe.description}</p>
@@ -339,7 +391,11 @@ const RecipeModal = ({ recipe, onClose }: RecipeModalProps) => {
                     <div className="grid md:grid-cols-2 gap-8">
                         <div>
                             <h3 className="text-xl font-semibold mb-3 text-gray-700">Ingredients</h3>
-                            <ul className="space-y-2 list-disc list-inside text-gray-600">{recipe.ingredients?.map((ing, i) => <li key={i}>{ing}</li>)}</ul>
+                            <ul className="space-y-2 list-disc list-inside text-gray-600">
+                                {recipe.ingredients?.map((ing, i) => (
+                                    <li key={i}>{typeof ing === 'object' ? `${ing.quantity} ${ing.name}` : ing}</li>
+                                ))}
+                            </ul>
                         </div>
                          <div>
                             <h3 className="text-xl font-semibold mb-3 text-gray-700">Nutritional Info</h3>
@@ -362,7 +418,6 @@ const RecipeModal = ({ recipe, onClose }: RecipeModalProps) => {
         </div>
     );
 };
-
 interface RecipesPageProps {
     ingredients: string[];
     dietary: string[];
@@ -370,43 +425,62 @@ interface RecipesPageProps {
     cuisine: string;
     onBack: () => void;
     onRecipeSelect: (recipe: Recipe) => void;
+    token: string | null;
 }
 
-const RecipesPage = ({ ingredients, dietary, servings, cuisine, onBack, onRecipeSelect }: RecipesPageProps) => {
+const RecipesPage = ({ ingredients, dietary, servings, cuisine, onBack, onRecipeSelect, token }: RecipesPageProps) => {
     const [recipes, setRecipes] = React.useState<Recipe[]>([]);
     const [isLoading, setIsLoading] = React.useState(true);
     const [error, setError] = React.useState<string | null>(null);
+    const [favorites, setFavorites] = React.useState<(number | string)[]>([]);
 
     const [difficultyFilter, setDifficultyFilter] = React.useState<string[]>([]);
     const [maxTimeFilter, setMaxTimeFilter] = React.useState<number>(120);
     const [filteredRecipes, setFilteredRecipes] = React.useState<Recipe[]>([]);
 
-    React.useEffect(() => {
+    const fetchFavorites = async () => {
+        if (token) {
+            const response = await fetch('http://localhost:5001/favorites', {
+                headers: { 'Authorization': `Bearer ${token}` }
+            });
+            if (response.ok) {
+                const data = await response.json();
+                setFavorites(data.map((r: Recipe) => r.id));
+            }
+        }
+    };
+
+    useEffect(() => {
         const fetchRecipes = async () => {
             setIsLoading(true);
             setError(null);
+            
+            const endpoint = token ? '/generate_recipes' : '/public_recipes';
+            const headers: HeadersInit = { 'Content-Type': 'application/json' };
+            if (token) {
+                headers['Authorization'] = `Bearer ${token}`;
+            }
+
             try {
-                const response = await fetch('http://localhost:5001/generate_recipes', {
+                const response = await fetch(`http://localhost:5001${endpoint}`, {
                     method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
+                    headers: headers,
                     body: JSON.stringify({ ingredients, dietary, servings, cuisine }),
                 });
 
                 if (!response.ok) {
+                    const errorText = await response.text();
                     try {
-                        const errorData = await response.json();
+                        const errorData = JSON.parse(errorText);
                         throw new Error(errorData.error || 'Failed to fetch recipes from the server.');
                     } catch (e) {
-                         throw new Error(`Server returned status ${response.status}: ${await response.text()}`);
+                         throw new Error(`Server returned status ${response.status}: ${errorText}`);
                     }
                 }
                 
-                const responseText = await response.text();
-                const cleanedText = responseText.replace(/^```json\s*/, '').replace(/```$/, '');
-                const parsedRecipes = JSON.parse(cleanedText);
+                const parsedRecipes = await response.json();
                 
-                const recipesWithIds = parsedRecipes.map((recipe: Omit<Recipe, 'id'>, index: number) => ({...recipe, id: index}));
-                setRecipes(recipesWithIds);
+                setRecipes(parsedRecipes);
             } catch (err) {
                 setError(err instanceof Error ? err.message : 'An unknown error occurred.');
                 console.error(err);
@@ -416,9 +490,12 @@ const RecipesPage = ({ ingredients, dietary, servings, cuisine, onBack, onRecipe
         };
 
         fetchRecipes();
-    }, [ingredients, dietary, servings, cuisine]);
+        if (token) {
+            fetchFavorites();
+        }
+    }, [ingredients, dietary, servings, cuisine, token]);
 
-    React.useEffect(() => {
+    useEffect(() => {
         let tempRecipes = [...recipes];
         if (difficultyFilter.length > 0) {
             tempRecipes = tempRecipes.filter(recipe => difficultyFilter.includes(recipe.difficulty));
@@ -429,6 +506,22 @@ const RecipesPage = ({ ingredients, dietary, servings, cuisine, onBack, onRecipe
 
     const handleDifficultyToggle = (difficulty: string) => {
         setDifficultyFilter(prev => prev.includes(difficulty) ? prev.filter(d => d !== difficulty) : [...prev, difficulty]);
+    };
+
+    const handleFavorite = async (recipe: Recipe) => {
+        if (token) {
+            const isCurrentlyFavorite = favorites.includes(recipe.id);
+            const endpoint = isCurrentlyFavorite ? '/unfavorite' : '/favorite';
+            await fetch(`http://localhost:5001${endpoint}`, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Authorization': `Bearer ${token}`
+                },
+                body: JSON.stringify(isCurrentlyFavorite ? { recipe_id: recipe.id } : recipe)
+            });
+            fetchFavorites();
+        }
     };
 
     return (
@@ -468,7 +561,7 @@ const RecipesPage = ({ ingredients, dietary, servings, cuisine, onBack, onRecipe
                 {error && (<div className="text-center bg-red-100 text-red-800 p-8 rounded-xl shadow"><h2 className="text-2xl font-bold">An Error Occurred</h2><p className="mt-2">{error}</p></div>)}
                 {!isLoading && !error && filteredRecipes.length > 0 && (
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                        {filteredRecipes.map(recipe => (<RecipeCard key={recipe.id} recipe={recipe} onClick={() => onRecipeSelect(recipe)} />))}
+                        {filteredRecipes.map((recipe, index) => (<RecipeCard key={`${recipe.id}-${index}`} recipe={recipe} onClick={() => onRecipeSelect(recipe)} onFavorite={handleFavorite} isFavorite={favorites.includes(recipe.id)} token={token} />))}
                     </div>
                 )}
                 {!isLoading && !error && (recipes.length > 0 && filteredRecipes.length === 0) && (<div className="text-center bg-white p-12 rounded-xl shadow"><h2 className="text-2xl font-bold text-gray-700">No Recipes Match Your Filters</h2><p className="text-gray-500 mt-2">Try adjusting your difficulty or cooking time filters to see more results.</p></div>)}
@@ -478,12 +571,149 @@ const RecipesPage = ({ ingredients, dietary, servings, cuisine, onBack, onRecipe
     );
 };
 
+// --- NEW COMPONENTS ---
+
+const LoginPage = ({ setToken, setPage }: { setToken: (token: string) => void, setPage: (page: string) => void }) => {
+    const [username, setUsername] = useState('');
+    const [password, setPassword] = useState('');
+    const [error, setError] = useState('');
+
+    const handleSubmit = async (e: React.FormEvent) => {
+        e.preventDefault();
+        const response = await fetch('http://localhost:5001/login', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ username, password }),
+        });
+        if (response.ok) {
+            const data = await response.json();
+            setToken(data.access_token);
+            localStorage.setItem('token', data.access_token);
+            setPage('home');
+        } else {
+            setError('Invalid credentials');
+        }
+    };
+
+    return (
+        <div className="min-h-screen flex items-center justify-center bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
+            <div className="max-w-md w-full space-y-8">
+                <div>
+                    <h2 className="mt-6 text-center text-3xl font-extrabold text-gray-900">Sign in to your account</h2>
+                </div>
+                <form className="mt-8 space-y-6" onSubmit={handleSubmit}>
+                    <input type="text" value={username} onChange={e => setUsername(e.target.value)} placeholder="Username" required className="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-emerald-500 focus:border-emerald-500 focus:z-10 sm:text-sm" />
+                    <input type="password" value={password} onChange={e => setPassword(e.target.value)} placeholder="Password" required className="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-b-md focus:outline-none focus:ring-emerald-500 focus:border-emerald-500 focus:z-10 sm:text-sm" />
+                    {error && <p className="text-red-500 text-xs italic">{error}</p>}
+                    <div>
+                        <button type="submit" className="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-emerald-600 hover:bg-emerald-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-emerald-500">
+                            Sign in
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    );
+};
+const SignupPage = ({ setPage }: { setPage: (page: string) => void }) => {
+    const [username, setUsername] = useState('');
+    const [password, setPassword] = useState('');
+    const [error, setError] = useState('');
+
+    const handleSubmit = async (e: React.FormEvent) => {
+        e.preventDefault();
+        const response = await fetch('http://localhost:5001/register', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ username, password }),
+        });
+        if (response.ok) {
+            setPage('login');
+        } else {
+            setError('Could not create account');
+        }
+    };
+    return (
+        <div className="min-h-screen flex items-center justify-center bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
+            <div className="max-w-md w-full space-y-8">
+                <div>
+                    <h2 className="mt-6 text-center text-3xl font-extrabold text-gray-900">Create a new account</h2>
+                </div>
+                <form className="mt-8 space-y-6" onSubmit={handleSubmit}>
+                    <input type="text" value={username} onChange={e => setUsername(e.target.value)} placeholder="Username" required className="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-emerald-500 focus:border-emerald-500 focus:z-10 sm:text-sm" />
+                    <input type="password" value={password} onChange={e => setPassword(e.target.value)} placeholder="Password" required className="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-b-md focus:outline-none focus:ring-emerald-500 focus:border-emerald-500 focus:z-10 sm:text-sm" />
+                    {error && <p className="text-red-500 text-xs italic">{error}</p>}
+                    <div>
+                        <button type="submit" className="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-emerald-600 hover:bg-emerald-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-emerald-500">
+                            Sign up
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    );
+};
+
+const FavoritesPage = ({ token, onRecipeSelect }: { token: string | null, onRecipeSelect: (recipe: Recipe) => void }) => {
+    const [favorites, setFavorites] = useState<Recipe[]>([]);
+    useEffect(() => {
+        const fetchFavorites = async () => {
+            if (token) {
+                const response = await fetch('http://localhost:5001/favorites', {
+                    headers: { 'Authorization': `Bearer ${token}` }
+                });
+                if (response.ok) {
+                    const data = await response.json();
+                    setFavorites(data);
+                }
+            }
+        };
+        fetchFavorites();
+    }, [token]);
+
+    const handleUnfavorite = async (recipeId: number | string) => {
+        if (token) {
+            await fetch('http://localhost:5001/unfavorite', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Authorization': `Bearer ${token}`
+                },
+                body: JSON.stringify({ recipe_id: recipeId })
+            });
+            setFavorites(favorites.filter(recipe => recipe.id !== recipeId));
+        }
+    };
+
+    return (
+        <div className="min-h-screen bg-gray-100 pt-24 px-4 sm:px-6 lg:px-8">
+            <div className="max-w-7xl mx-auto">
+                <h1 className="text-3xl font-bold text-gray-800 text-center mb-8">My Favorite Recipes</h1>
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                    {favorites.map(recipe => (
+                        <RecipeCard key={recipe.id.toString()} recipe={recipe} onClick={() => onRecipeSelect(recipe)} onFavorite={() => handleUnfavorite(recipe.id)} isFavorite={true} token={token} />
+                    ))}
+                </div>
+            </div>
+        </div>
+    );
+};
+
 export default function App() {
-  const [page, setPage] = React.useState('home'); 
+  const [page, setPage] = React.useState('login'); 
+  const [token, setToken] = React.useState<string | null>(localStorage.getItem('token'));
   const [searchParams, setSearchParams] = React.useState<{ ingredients: string[]; dietary: string[]; servings: number; cuisine: string }>({ ingredients: [], dietary: [], servings: 2, cuisine: 'Any' });
   const [selectedRecipe, setSelectedRecipe] = React.useState<Recipe | null>(null);
 
-  const handleFindRecipes = (ingredients: string[], dietary: string[], servings: number, cuisine: string) => {
+  useEffect(() => {
+      const storedToken = localStorage.getItem('token');
+      if (storedToken) {
+          setToken(storedToken);
+          setPage('home');
+      }
+  }, []);
+
+  const handleFindRecipes = (ingredients: string[], dietary: string[], servings: number, cuisine:string) => {
     setSearchParams({ ingredients, dietary, servings, cuisine });
     setPage('recipes');
   };
@@ -492,22 +722,29 @@ export default function App() {
     setPage('home');
   };
 
+  const renderPage = () => {
+      if (!token) {
+          if (page === 'signup') {
+              return <SignupPage setPage={setPage} />;
+          }
+          return <LoginPage setToken={setToken} setPage={setPage} />;
+      }
+
+      switch (page) {
+          case 'recipes':
+              return <RecipesPage {...searchParams} onBack={handleBackToHome} onRecipeSelect={setSelectedRecipe} token={token} />;
+          case 'favorites':
+              return <FavoritesPage token={token} onRecipeSelect={setSelectedRecipe} />;
+          default:
+              return <HomePage onFindRecipes={handleFindRecipes} />;
+      }
+  };
+
   return (
     <>
-      <Header />
-      {page === 'home' && <HomePage onFindRecipes={handleFindRecipes} />}
-      {page === 'recipes' && (
-        <RecipesPage 
-          ingredients={searchParams.ingredients} 
-          dietary={searchParams.dietary}
-          servings={searchParams.servings}
-          cuisine={searchParams.cuisine}
-          onBack={handleBackToHome}
-          onRecipeSelect={setSelectedRecipe}
-        />
-      )}
+      <Header token={token} setToken={setToken} setPage={setPage} />
+      {renderPage()}
       {selectedRecipe && <RecipeModal recipe={selectedRecipe} onClose={() => setSelectedRecipe(null)} />}
     </>
   );
 }
-
