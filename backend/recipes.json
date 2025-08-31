@@ -1,0 +1,1189 @@
+[
+    {
+      "title": "Vegetable Fried Rice",
+      "cuisine": "Asian",
+      "difficulty": "Easy",
+      "cooking_time": 25,
+      "servings": 2,
+      "ingredients": [
+        {"name": "Cooked Rice", "quantity": "2 cups"},
+        {"name": "Carrot", "quantity": "1/2 cup, diced"},
+        {"name": "Peas", "quantity": "1/2 cup"},
+        {"name": "Soy Sauce", "quantity": "2 tbsp"},
+        {"name": "Sesame Oil", "quantity": "1 tsp"},
+        {"name": "Onion", "quantity": "1/4 cup, chopped"},
+        {"name": "Garlic", "quantity": "1 clove, minced"}
+      ],
+      "steps": [
+        "Heat sesame oil in a wok or large skillet over medium-high heat.",
+        "Add onion and garlic, and cook until fragrant.",
+        "Add carrots and peas, and stir-fry for 3-4 minutes until tender-crisp.",
+        "Add the cooked rice to the wok, breaking up any clumps.",
+        "Pour soy sauce over the rice and stir everything together until well combined.",
+        "Continue to stir-fry for another 2-3 minutes until the rice is heated through."
+      ],
+      "nutrition": {
+        "calories": 350,
+        "protein": 8,
+        "carbs": 65,
+        "fat": 6
+      }
+    },
+    {
+      "title": "Classic Chicken Alfredo",
+      "cuisine": "Italian",
+      "difficulty": "Medium",
+      "cooking_time": 30,
+      "servings": 4,
+      "ingredients": [
+        {"name": "Fettuccine", "quantity": "12 oz"},
+        {"name": "Chicken Breast", "quantity": "1 lb, boneless, skinless"},
+        {"name": "Heavy Cream", "quantity": "1 1/2 cups"},
+        {"name": "Parmesan Cheese", "quantity": "1 cup, grated"},
+        {"name": "Butter", "quantity": "1/2 cup"},
+        {"name": "Garlic", "quantity": "2 cloves, minced"},
+        {"name": "Parsley", "quantity": "2 tbsp, chopped"}
+      ],
+      "steps": [
+        "Cook fettuccine according to package directions. Drain and set aside.",
+        "While pasta is cooking, season chicken with salt and pepper and cook in a skillet until golden brown and cooked through. Set aside and slice.",
+        "In the same skillet, melt butter over medium heat. Add garlic and cook until fragrant.",
+        "Pour in the heavy cream and bring to a simmer. Stir in Parmesan cheese until the sauce is smooth and thickened.",
+        "Add the cooked fettuccine and sliced chicken to the sauce, tossing to coat.",
+        "Garnish with fresh parsley before serving."
+      ],
+      "nutrition": {
+        "calories": 780,
+        "protein": 45,
+        "carbs": 50,
+        "fat": 48
+      }
+    },
+    {
+      "title": "Spicy Chicken Tacos",
+      "cuisine": "Mexican",
+      "difficulty": "Easy",
+      "cooking_time": 20,
+      "servings": 3,
+      "ingredients": [
+          {"name": "Chicken Breast", "quantity": "1 lb, shredded"},
+          {"name": "Taco Shells", "quantity": "6"},
+          {"name": "Taco Seasoning", "quantity": "1 packet"},
+          {"name": "Lettuce", "quantity": "1 cup, shredded"},
+          {"name": "Tomatoes", "quantity": "1 cup, diced"},
+          {"name": "Cheddar Cheese", "quantity": "1/2 cup, shredded"},
+          {"name": "Sour Cream", "quantity": "1/4 cup"}
+      ],
+      "steps": [
+          "In a skillet, cook shredded chicken with taco seasoning according to package directions.",
+          "Warm taco shells in the oven or microwave.",
+          "Assemble tacos by filling shells with the cooked chicken.",
+          "Top with lettuce, tomatoes, cheese, and a dollop of sour cream."
+      ],
+      "nutrition": {
+          "calories": 450,
+          "protein": 30,
+          "carbs": 35,
+          "fat": 20
+      }
+    },
+    {
+      "title": "Palak Paneer",
+      "cuisine": "Indian",
+      "difficulty": "Medium",
+      "cooking_time": 40,
+      "servings": 4,
+      "ingredients": [
+        {"name": "Spinach (Palak)", "quantity": "1 large bunch"},
+        {"name": "Paneer (Indian Cottage Cheese)", "quantity": "200g, cubed"},
+        {"name": "Onion", "quantity": "1, finely chopped"},
+        {"name": "Tomato", "quantity": "2, pureed"},
+        {"name": "Ginger-Garlic Paste", "quantity": "1 tbsp"},
+        {"name": "Garam Masala", "quantity": "1 tsp"},
+        {"name": "Turmeric Powder", "quantity": "1/2 tsp"},
+        {"name": "Cream", "quantity": "2 tbsp"}
+      ],
+      "steps": [
+        "Blanch the spinach, then puree it and set aside.",
+        "In a pan, heat oil and sauté the onions until golden brown.",
+        "Add ginger-garlic paste and cook for a minute.",
+        "Add tomato puree, turmeric, and garam masala. Cook until oil separates from the masala.",
+        "Stir in the spinach puree and cook for 5 minutes.",
+        "Add paneer cubes and cream, simmer for another 2-3 minutes.",
+        "Serve hot with naan or rice."
+      ],
+      "nutrition": {
+        "calories": 300,
+        "protein": 15,
+        "carbs": 12,
+        "fat": 22
+      }
+    },
+    {
+      "title": "Classic Beef Burger",
+      "cuisine": "American",
+      "difficulty": "Easy",
+      "cooking_time": 20,
+      "servings": 2,
+      "ingredients": [
+        {"name": "Ground Beef", "quantity": "1 lb"},
+        {"name": "Burger Buns", "quantity": "2"},
+        {"name": "Cheddar Cheese", "quantity": "2 slices"},
+        {"name": "Lettuce", "quantity": "2 leaves"},
+        {"name": "Tomato", "quantity": "2 slices"},
+        {"name": "Onion", "quantity": "2 slices"},
+        {"name": "Ketchup", "quantity": "2 tbsp"},
+        {"name": "Mustard", "quantity": "2 tbsp"}
+      ],
+      "steps": [
+        "Form the ground beef into two patties. Season with salt and pepper.",
+        "Grill or pan-sear the patties for 4-5 minutes per side, or until cooked to your desired doneness.",
+        "During the last minute of cooking, place a slice of cheddar cheese on each patty to melt.",
+        "Toast the burger buns lightly.",
+        "Assemble the burgers with the patty, lettuce, tomato, and onion.",
+        "Add ketchup and mustard as desired."
+      ],
+      "nutrition": {
+        "calories": 650,
+        "protein": 40,
+        "carbs": 35,
+        "fat": 38
+      }
+    },
+    {
+      "title": "Greek Salad",
+      "cuisine": "Mediterranean",
+      "difficulty": "Easy",
+      "cooking_time": 15,
+      "servings": 2,
+      "ingredients": [
+        {"name": "Cucumber", "quantity": "1, chopped"},
+        {"name": "Tomatoes", "quantity": "2, chopped"},
+        {"name": "Red Onion", "quantity": "1/4, thinly sliced"},
+        {"name": "Feta Cheese", "quantity": "1/2 cup, crumbled"},
+        {"name": "Kalamata Olives", "quantity": "1/4 cup"},
+        {"name": "Olive Oil", "quantity": "2 tbsp"},
+        {"name": "Lemon Juice", "quantity": "1 tbsp"},
+        {"name": "Dried Oregano", "quantity": "1 tsp"}
+      ],
+      "steps": [
+        "In a large bowl, combine the chopped cucumber, tomatoes, and red onion.",
+        "Add the feta cheese and Kalamata olives.",
+        "In a small bowl, whisk together the olive oil, lemon juice, and oregano.",
+        "Pour the dressing over the salad and toss gently to combine.",
+        "Serve immediately."
+      ],
+      "nutrition": {
+        "calories": 250,
+        "protein": 7,
+        "carbs": 10,
+        "fat": 20
+      }
+    },
+    {
+      "title": "Pad Thai",
+      "cuisine": "Asian",
+      "difficulty": "Hard",
+      "cooking_time": 35,
+      "servings": 2,
+      "ingredients": [
+        {"name": "Rice Noodles", "quantity": "8 oz"},
+        {"name": "Shrimp", "quantity": "1/2 lb, peeled and deveined"},
+        {"name": "Tofu", "quantity": "4 oz, firm, cubed"},
+        {"name": "Eggs", "quantity": "2"},
+        {"name": "Bean Sprouts", "quantity": "1 cup"},
+        {"name": "Peanuts", "quantity": "1/4 cup, crushed"},
+        {"name": "Lime", "quantity": "1, cut into wedges"},
+        {"name": "Pad Thai Sauce", "quantity": "1/2 cup"}
+      ],
+      "steps": [
+        "Cook rice noodles according to package directions. Drain and set aside.",
+        "Heat oil in a wok. Add tofu and cook until golden. Add shrimp and cook until pink. Remove and set aside.",
+        "Push ingredients to one side, crack eggs into the other side and scramble.",
+        "Return shrimp and tofu to the wok. Add noodles, bean sprouts, and Pad Thai sauce.",
+        "Toss everything together until well combined and heated through.",
+        "Serve topped with crushed peanuts and a lime wedge."
+      ],
+      "nutrition": {
+        "calories": 550,
+        "protein": 25,
+        "carbs": 70,
+        "fat": 18
+      }
+    },
+    {
+      "title": "Mushroom Risotto",
+      "cuisine": "Italian",
+      "difficulty": "Medium",
+      "cooking_time": 45,
+      "servings": 3,
+      "ingredients": [
+        {"name": "Arborio Rice", "quantity": "1 cup"},
+        {"name": "Mushrooms", "quantity": "8 oz, sliced"},
+        {"name": "Vegetable Broth", "quantity": "4 cups, warm"},
+        {"name": "Onion", "quantity": "1/2, chopped"},
+        {"name": "White Wine", "quantity": "1/2 cup"},
+        {"name": "Parmesan Cheese", "quantity": "1/2 cup, grated"},
+        {"name": "Butter", "quantity": "2 tbsp"}
+      ],
+      "steps": [
+        "In a large saucepan, melt butter and sauté onions until soft.",
+        "Add mushrooms and cook until they release their liquid and start to brown.",
+        "Stir in the Arborio rice and cook for 1 minute until the grains are coated.",
+        "Pour in the white wine and cook until it's fully absorbed.",
+        "Add the warm vegetable broth one ladleful at a time, stirring continuously until each addition is absorbed before adding the next.",
+        "Continue until the rice is creamy and cooked al dente.",
+        "Stir in the Parmesan cheese and serve immediately."
+      ],
+      "nutrition": {
+        "calories": 420,
+        "protein": 12,
+        "carbs": 60,
+        "fat": 15
+      }
+    },
+    {
+      "title": "Chicken Curry",
+      "cuisine": "Indian",
+      "difficulty": "Medium",
+      "cooking_time": 50,
+      "servings": 4,
+      "ingredients": [
+        {"name": "Chicken", "quantity": "1.5 lbs, cut into pieces"},
+        {"name": "Onion", "quantity": "1, large, chopped"},
+        {"name": "Tomatoes", "quantity": "2, pureed"},
+        {"name": "Yogurt", "quantity": "1/2 cup"},
+        {"name": "Ginger-Garlic Paste", "quantity": "2 tbsp"},
+        {"name": "Coriander Powder", "quantity": "2 tsp"},
+        {"name": "Turmeric Powder", "quantity": "1 tsp"},
+        {"name": "Garam Masala", "quantity": "1 tsp"},
+        {"name": "Cilantro", "quantity": "1/4 cup, chopped"}
+      ],
+      "steps": [
+        "Heat oil in a pot and fry the onions until golden.",
+        "Add ginger-garlic paste and cook for a minute.",
+        "Add the chicken pieces and brown them on all sides.",
+        "Stir in the tomato puree, yogurt, and all the powdered spices.",
+        "Cook for 15-20 minutes, stirring occasionally, until the chicken is cooked through and the gravy has thickened.",
+        "Garnish with fresh cilantro and serve with rice or naan."
+      ],
+      "nutrition": {
+        "calories": 400,
+        "protein": 35,
+        "carbs": 10,
+        "fat": 25
+      }
+    },
+    {
+      "title": "Beef and Broccoli",
+      "cuisine": "Asian",
+      "difficulty": "Easy",
+      "cooking_time": 25,
+      "servings": 3,
+      "ingredients": [
+        {"name": "Beef Sirloin", "quantity": "1 lb, thinly sliced"},
+        {"name": "Broccoli Florets", "quantity": "2 cups"},
+        {"name": "Soy Sauce", "quantity": "1/4 cup"},
+        {"name": "Ginger", "quantity": "1 tsp, grated"},
+        {"name": "Garlic", "quantity": "2 cloves, minced"},
+        {"name": "Cornstarch", "quantity": "1 tbsp"},
+        {"name": "Sesame Oil", "quantity": "1 tsp"}
+      ],
+      "steps": [
+        "In a bowl, toss the sliced beef with cornstarch.",
+        "In a separate small bowl, mix soy sauce, ginger, and garlic.",
+        "Heat sesame oil in a wok. Add the beef and stir-fry until browned. Remove from wok.",
+        "Add broccoli to the wok with a little water, cover and steam for 3-4 minutes.",
+        "Return the beef to the wok, pour over the soy sauce mixture, and stir everything to combine.",
+        "Cook for another 2 minutes until the sauce has thickened slightly.",
+        "Serve over rice."
+      ],
+      "nutrition": {
+        "calories": 380,
+        "protein": 30,
+        "carbs": 15,
+        "fat": 22
+      }
+    },
+    {
+      "title": "Margherita Pizza",
+      "cuisine": "Italian",
+      "difficulty": "Easy",
+      "cooking_time": 15,
+      "servings": 2,
+      "ingredients": [
+        {"name": "Pizza Dough", "quantity": "1"},
+        {"name": "Tomato Sauce", "quantity": "1/2 cup"},
+        {"name": "Fresh Mozzarella", "quantity": "4 oz, sliced"},
+        {"name": "Fresh Basil", "quantity": "1/4 cup"},
+        {"name": "Olive Oil", "quantity": "1 tbsp"}
+      ],
+      "steps": [
+        "Preheat your oven to its highest setting, typically 500-550°F (260-290°C).",
+        "Stretch out the pizza dough on a lightly floured surface.",
+        "Spread a thin layer of tomato sauce over the dough, leaving a small border.",
+        "Arrange the fresh mozzarella slices on top.",
+        "Bake for 8-12 minutes, or until the crust is golden and the cheese is bubbly.",
+        "Remove from oven, top with fresh basil leaves, and drizzle with olive oil before slicing."
+      ],
+      "nutrition": {
+        "calories": 500,
+        "protein": 20,
+        "carbs": 60,
+        "fat": 20
+      }
+    },
+    {
+      "title": "Vegetable Korma",
+      "cuisine": "Indian",
+      "difficulty": "Medium",
+      "cooking_time": 45,
+      "servings": 4,
+      "ingredients": [
+        {"name": "Mixed Vegetables", "quantity": "3 cups (carrots, peas, potatoes, beans)"},
+        {"name": "Onion", "quantity": "1, pureed"},
+        {"name": "Cashew Nuts", "quantity": "1/4 cup, soaked"},
+        {"name": "Yogurt", "quantity": "1/2 cup"},
+        {"name": "Ginger-Garlic Paste", "quantity": "1 tbsp"},
+        {"name": "Garam Masala", "quantity": "1 tsp"},
+        {"name": "Coriander Powder", "quantity": "1 tsp"}
+      ],
+      "steps": [
+        "Boil or steam the mixed vegetables until tender. Set aside.",
+        "Make a paste of the soaked cashew nuts.",
+        "Heat oil in a pan, add the onion puree and ginger-garlic paste, and cook until golden.",
+        "Add the cashew paste and cook for a few minutes.",
+        "Stir in the yogurt, garam masala, and coriander powder. Cook until the gravy thickens.",
+        "Add the cooked vegetables and salt, simmer for 5-7 minutes.",
+        "Serve hot."
+      ],
+      "nutrition": {
+        "calories": 320,
+        "protein": 8,
+        "carbs": 25,
+        "fat": 22
+      }
+    },
+    {
+      "title": "Lemon Herb Baked Salmon",
+      "cuisine": "American",
+      "difficulty": "Easy",
+      "cooking_time": 20,
+      "servings": 2,
+      "ingredients": [
+        {"name": "Salmon Fillets", "quantity": "2 (6 oz each)"},
+        {"name": "Lemon", "quantity": "1, sliced"},
+        {"name": "Fresh Dill", "quantity": "2 tbsp, chopped"},
+        {"name": "Olive Oil", "quantity": "1 tbsp"},
+        {"name": "Garlic", "quantity": "1 clove, minced"}
+      ],
+      "steps": [
+        "Preheat oven to 400°F (200°C).",
+        "Place salmon fillets on a baking sheet lined with parchment paper.",
+        "In a small bowl, mix olive oil, dill, and garlic.",
+        "Brush the mixture over the salmon fillets.",
+        "Top each fillet with a few slices of lemon.",
+        "Bake for 12-15 minutes, or until the salmon is cooked through and flakes easily.",
+        "Serve immediately."
+      ],
+      "nutrition": {
+        "calories": 450,
+        "protein": 40,
+        "carbs": 3,
+        "fat": 30
+      }
+    },
+    {
+      "title": "Guacamole",
+      "cuisine": "Mexican",
+      "difficulty": "Easy",
+      "cooking_time": 10,
+      "servings": 4,
+      "ingredients": [
+        {"name": "Avocados", "quantity": "3, ripe"},
+        {"name": "Lime", "quantity": "1, juiced"},
+        {"name": "Onion", "quantity": "1/4 cup, finely chopped"},
+        {"name": "Cilantro", "quantity": "2 tbsp, chopped"},
+        {"name": "Jalapeno", "quantity": "1, minced"},
+        {"name": "Salt", "quantity": "1/2 tsp"}
+      ],
+      "steps": [
+        "Cut the avocados in half, remove the pits, and scoop the flesh into a bowl.",
+        "Mash the avocado with a fork to your desired consistency.",
+        "Stir in the lime juice, chopped onion, cilantro, and minced jalapeno.",
+        "Season with salt and mix well.",
+        "Serve with tortilla chips."
+      ],
+      "nutrition": {
+        "calories": 150,
+        "protein": 2,
+        "carbs": 9,
+        "fat": 14
+      }
+    },
+    {
+      "title": "Lentil Soup",
+      "cuisine": "Mediterranean",
+      "difficulty": "Easy",
+      "cooking_time": 50,
+      "servings": 6,
+      "ingredients": [
+        {"name": "Brown Lentils", "quantity": "1 cup"},
+        {"name": "Carrot", "quantity": "1, chopped"},
+        {"name": "Celery", "quantity": "1 stalk, chopped"},
+        {"name": "Onion", "quantity": "1, chopped"},
+        {"name": "Vegetable Broth", "quantity": "6 cups"},
+        {"name": "Cumin", "quantity": "1 tsp"},
+        {"name": "Bay Leaf", "quantity": "1"}
+      ],
+      "steps": [
+        "Rinse the lentils.",
+        "In a large pot, heat olive oil and sauté the onion, carrot, and celery until softened.",
+        "Add the lentils, vegetable broth, cumin, and bay leaf.",
+        "Bring to a boil, then reduce heat and simmer for 40-45 minutes, or until lentils are tender.",
+        "Remove the bay leaf before serving."
+      ],
+      "nutrition": {
+        "calories": 180,
+        "protein": 10,
+        "carbs": 30,
+        "fat": 2
+      }
+    },
+    {
+      "title": "Spaghetti Carbonara",
+      "cuisine": "Italian",
+      "difficulty": "Medium",
+      "cooking_time": 25,
+      "servings": 2,
+      "ingredients": [
+        {"name": "Spaghetti", "quantity": "8 oz"},
+        {"name": "Pancetta", "quantity": "4 oz, diced"},
+        {"name": "Eggs", "quantity": "2 large"},
+        {"name": "Pecorino Romano Cheese", "quantity": "1/2 cup, grated"},
+        {"name": "Black Pepper", "quantity": "to taste"}
+      ],
+      "steps": [
+        "Cook spaghetti according to package directions.",
+        "While the pasta cooks, sauté the pancetta in a skillet until crisp.",
+        "In a bowl, whisk together the eggs and Pecorino Romano cheese.",
+        "Drain the pasta, reserving a little pasta water. Immediately add the hot pasta to the skillet with the pancetta.",
+        "Remove from heat and quickly stir in the egg and cheese mixture. The heat from the pasta will cook the eggs.",
+        "If the sauce is too thick, add a little of the reserved pasta water. Season generously with black pepper."
+      ],
+      "nutrition": {
+        "calories": 600,
+        "protein": 25,
+        "carbs": 60,
+        "fat": 28
+      }
+    },
+    {
+      "title": "Tandoori Chicken",
+      "cuisine": "Indian",
+      "difficulty": "Hard",
+      "cooking_time": 60,
+      "servings": 4,
+      "ingredients": [
+        {"name": "Chicken", "quantity": "2 lbs, with bone"},
+        {"name": "Yogurt", "quantity": "1 cup"},
+        {"name": "Tandoori Masala", "quantity": "3 tbsp"},
+        {"name": "Lemon Juice", "quantity": "2 tbsp"},
+        {"name": "Ginger-Garlic Paste", "quantity": "2 tbsp"}
+      ],
+      "steps": [
+        "Make deep gashes in the chicken pieces.",
+        "In a bowl, mix yogurt, tandoori masala, lemon juice, and ginger-garlic paste to make a marinade.",
+        "Coat the chicken pieces thoroughly with the marinade and let it rest for at least 4 hours, or overnight.",
+        "Preheat oven to 400°F (200°C).",
+        "Arrange the chicken on a baking tray and bake for 25-30 minutes, turning once, until cooked through and charred in spots.",
+        "Serve with mint chutney and onion rings."
+      ],
+      "nutrition": {
+        "calories": 350,
+        "protein": 45,
+        "carbs": 5,
+        "fat": 15
+      }
+    },
+    {
+      "title": "Ramen Noodle Soup",
+      "cuisine": "Asian",
+      "difficulty": "Medium",
+      "cooking_time": 45,
+      "servings": 2,
+      "ingredients": [
+        {"name": "Ramen Noodles", "quantity": "2 packs"},
+        {"name": "Pork Belly", "quantity": "1/2 lb"},
+        {"name": "Chicken Broth", "quantity": "4 cups"},
+        {"name": "Soy Sauce", "quantity": "3 tbsp"},
+        {"name": "Soft Boiled Eggs", "quantity": "2"},
+        {"name": "Green Onions", "quantity": "1/4 cup, sliced"}
+      ],
+      "steps": [
+        "Sear the pork belly until crispy. Then simmer in water for 30 minutes until tender. Slice.",
+        "In a pot, bring chicken broth to a simmer. Stir in soy sauce.",
+        "Cook ramen noodles according to package directions and drain.",
+        "Divide the noodles between two bowls. Pour the hot broth over them.",
+        "Top with sliced pork belly, a soft-boiled egg cut in half, and sliced green onions."
+      ],
+      "nutrition": {
+        "calories": 700,
+        "protein": 30,
+        "carbs": 80,
+        "fat": 30
+      }
+    },
+    {
+      "title": "Macaroni and Cheese",
+      "cuisine": "American",
+      "difficulty": "Easy",
+      "cooking_time": 30,
+      "servings": 4,
+      "ingredients": [
+        {"name": "Elbow Macaroni", "quantity": "8 oz"},
+        {"name": "Cheddar Cheese", "quantity": "2 cups, shredded"},
+        {"name": "Milk", "quantity": "2 cups"},
+        {"name": "Butter", "quantity": "1/4 cup"},
+        {"name": "Flour", "quantity": "1/4 cup"}
+      ],
+      "steps": [
+        "Cook macaroni according to package directions. Drain.",
+        "In a saucepan, melt butter. Whisk in flour and cook for 1 minute to make a roux.",
+        "Gradually whisk in the milk until the sauce is smooth and bubbly.",
+        "Stir in the shredded cheddar cheese until melted and the sauce is creamy.",
+        "Combine the cheese sauce with the cooked macaroni.",
+        "Serve immediately."
+      ],
+      "nutrition": {
+        "calories": 550,
+        "protein": 25,
+        "carbs": 50,
+        "fat": 28
+      }
+    },
+    {
+      "title": "Quesadillas",
+      "cuisine": "Mexican",
+      "difficulty": "Easy",
+      "cooking_time": 10,
+      "servings": 1,
+      "ingredients": [
+        {"name": "Flour Tortillas", "quantity": "2"},
+        {"name": "Cheese (Monterey Jack or Cheddar)", "quantity": "1/2 cup, shredded"},
+        {"name": "Cooked Chicken", "quantity": "1/4 cup, optional"},
+        {"name": "Salsa", "quantity": "for serving"},
+        {"name": "Sour Cream", "quantity": "for serving"}
+      ],
+      "steps": [
+        "Heat a non-stick skillet over medium heat.",
+        "Place one tortilla in the skillet. Sprinkle cheese (and chicken, if using) over the entire surface.",
+        "Top with the second tortilla.",
+        "Cook for 2-3 minutes per side, until the tortilla is golden brown and the cheese is melted.",
+        "Cut into wedges and serve with salsa and sour cream."
+      ],
+      "nutrition": {
+        "calories": 400,
+        "protein": 20,
+        "carbs": 30,
+        "fat": 20
+      }
+    },
+    {
+      "title": "Hummus",
+      "cuisine": "Mediterranean",
+      "difficulty": "Easy",
+      "cooking_time": 10,
+      "servings": 6,
+      "ingredients": [
+        {"name": "Chickpeas", "quantity": "1 can (15 oz), drained"},
+        {"name": "Tahini", "quantity": "1/4 cup"},
+        {"name": "Lemon Juice", "quantity": "1/4 cup"},
+        {"name": "Garlic", "quantity": "1 clove"},
+        {"name": "Olive Oil", "quantity": "2 tbsp"}
+      ],
+      "steps": [
+        "Combine chickpeas, tahini, lemon juice, and garlic in a food processor.",
+        "Blend until smooth.",
+        "While the processor is running, slowly stream in the olive oil.",
+        "Continue to blend until the hummus is light and creamy.",
+        "Serve with pita bread or fresh vegetables."
+      ],
+      "nutrition": {
+        "calories": 100,
+        "protein": 4,
+        "carbs": 8,
+        "fat": 7
+      }
+    },
+    {
+      "title": "Butter Chicken",
+      "cuisine": "Indian",
+      "difficulty": "Medium",
+      "cooking_time": 45,
+      "servings": 4,
+      "ingredients": [
+        {"name": "Chicken Breast", "quantity": "1.5 lbs, cubed"},
+        {"name": "Yogurt", "quantity": "1/2 cup"},
+        {"name": "Tomato Puree", "quantity": "1 cup"},
+        {"name": "Heavy Cream", "quantity": "1/2 cup"},
+        {"name": "Butter", "quantity": "4 tbsp"},
+        {"name": "Garam Masala", "quantity": "1.5 tsp"},
+        {"name": "Ginger-Garlic Paste", "quantity": "1 tbsp"}
+      ],
+      "steps": [
+        "Marinate chicken in yogurt, ginger-garlic paste, and half the garam masala for at least 30 minutes.",
+        "Grill or pan-fry the chicken until cooked through. Set aside.",
+        "In a pot, melt butter. Add tomato puree and cook for 10 minutes.",
+        "Stir in the remaining garam masala and cook for another 2 minutes.",
+        "Reduce heat and slowly stir in the heavy cream.",
+        "Add the cooked chicken to the sauce and simmer for 5 minutes.",
+        "Serve hot with naan bread."
+      ],
+      "nutrition": {
+        "calories": 500,
+        "protein": 40,
+        "carbs": 10,
+        "fat": 35
+      }
+    },
+    {
+      "title": "Caprese Salad",
+      "cuisine": "Italian",
+      "difficulty": "Easy",
+      "cooking_time": 10,
+      "servings": 2,
+      "ingredients": [
+        {"name": "Tomatoes", "quantity": "2 large, sliced"},
+        {"name": "Fresh Mozzarella", "quantity": "8 oz, sliced"},
+        {"name": "Fresh Basil Leaves", "quantity": "1/2 cup"},
+        {"name": "Balsamic Glaze", "quantity": "2 tbsp"},
+        {"name": "Extra Virgin Olive Oil", "quantity": "2 tbsp"}
+      ],
+      "steps": [
+        "Arrange alternating slices of tomato and mozzarella on a platter.",
+        "Tuck fresh basil leaves between the slices.",
+        "Drizzle with balsamic glaze and extra virgin olive oil.",
+        "Season with salt and pepper to taste."
+      ],
+      "nutrition": {
+        "calories": 300,
+        "protein": 15,
+        "carbs": 8,
+        "fat": 24
+      }
+    },
+    {
+      "title": "Chili Con Carne",
+      "cuisine": "American",
+      "difficulty": "Easy",
+      "cooking_time": 90,
+      "servings": 6,
+      "ingredients": [
+        {"name": "Ground Beef", "quantity": "2 lbs"},
+        {"name": "Kidney Beans", "quantity": "1 can (15 oz), drained"},
+        {"name": "Diced Tomatoes", "quantity": "1 can (28 oz)"},
+        {"name": "Onion", "quantity": "1, chopped"},
+        {"name": "Chili Powder", "quantity": "1/4 cup"},
+        {"name": "Cumin", "quantity": "1 tbsp"}
+      ],
+      "steps": [
+        "In a large pot, brown the ground beef with the chopped onion.",
+        "Drain off any excess fat.",
+        "Stir in the kidney beans, diced tomatoes, chili powder, and cumin.",
+        "Bring to a boil, then reduce heat and simmer for at least 1 hour, stirring occasionally.",
+        "Serve with toppings like shredded cheese, sour cream, and crackers."
+      ],
+      "nutrition": {
+        "calories": 450,
+        "protein": 30,
+        "carbs": 25,
+        "fat": 25
+      }
+    },
+    {
+      "title": "Sushi Rolls (Maki)",
+      "cuisine": "Asian",
+      "difficulty": "Hard",
+      "cooking_time": 60,
+      "servings": 4,
+      "ingredients": [
+        {"name": "Sushi Rice", "quantity": "2 cups, cooked and seasoned"},
+        {"name": "Nori (Seaweed)", "quantity": "4 sheets"},
+        {"name": "Cucumber", "quantity": "1, julienned"},
+        {"name": "Avocado", "quantity": "1, sliced"},
+        {"name": "Crab Meat or Salmon", "quantity": "1/2 lb"},
+        {"name": "Soy Sauce", "quantity": "for dipping"}
+      ],
+      "steps": [
+        "Lay a sheet of nori on a bamboo rolling mat.",
+        "Spread a thin layer of sushi rice over the nori, leaving a small border at the top.",
+        "Arrange your fillings (cucumber, avocado, crab/salmon) in a line across the center of the rice.",
+        "Carefully roll the sushi tightly from the bottom up, using the bamboo mat to help shape it.",
+        "Moisten the top border of the nori to seal the roll.",
+        "Slice the roll into 8 pieces with a sharp, wet knife.",
+        "Serve with soy sauce, wasabi, and pickled ginger."
+      ],
+      "nutrition": {
+        "calories": 350,
+        "protein": 15,
+        "carbs": 55,
+        "fat": 8
+      }
+    },
+    {
+      "title": "Falafel",
+      "cuisine": "Mediterranean",
+      "difficulty": "Medium",
+      "cooking_time": 30,
+      "servings": 4,
+      "ingredients": [
+        {"name": "Dried Chickpeas", "quantity": "1 cup, soaked overnight"},
+        {"name": "Onion", "quantity": "1/2, chopped"},
+        {"name": "Parsley", "quantity": "1/2 cup"},
+        {"name": "Cilantro", "quantity": "1/2 cup"},
+        {"name": "Garlic", "quantity": "3 cloves"},
+        {"name": "Cumin", "quantity": "1 tsp"},
+        {"name": "Oil", "quantity": "for frying"}
+      ],
+      "steps": [
+        "Drain the soaked chickpeas.",
+        "In a food processor, combine chickpeas, onion, parsley, cilantro, garlic, and cumin. Pulse until the mixture is finely chopped but not a paste.",
+        "Form the mixture into small balls or patties.",
+        "Heat oil in a deep pan to 350°F (175°C).",
+        "Fry the falafel in batches for 3-5 minutes, until golden brown and crisp.",
+        "Serve in pita bread with tahini sauce and salad."
+      ],
+      "nutrition": {
+        "calories": 330,
+        "protein": 13,
+        "carbs": 32,
+        "fat": 18
+      }
+    },
+    {
+      "title": "Chicken Enchiladas",
+      "cuisine": "Mexican",
+      "difficulty": "Medium",
+      "cooking_time": 40,
+      "servings": 4,
+      "ingredients": [
+        {"name": "Corn Tortillas", "quantity": "8"},
+        {"name": "Cooked Chicken", "quantity": "2 cups, shredded"},
+        {"name": "Enchilada Sauce", "quantity": "1 can (15 oz)"},
+        {"name": "Monterey Jack Cheese", "quantity": "2 cups, shredded"},
+        {"name": "Onion", "quantity": "1/2, chopped"}
+      ],
+      "steps": [
+        "Preheat oven to 375°F (190°C).",
+        "In a bowl, mix the shredded chicken with half the cheese and the chopped onion.",
+        "Pour a small amount of enchilada sauce in the bottom of a baking dish.",
+        "Warm the tortillas briefly to make them pliable. Fill each tortilla with the chicken mixture, roll it up, and place it seam-side down in the baking dish.",
+        "Pour the remaining enchilada sauce over the tortillas and top with the rest of the cheese.",
+        "Bake for 20-25 minutes, until bubbly and heated through."
+      ],
+      "nutrition": {
+        "calories": 500,
+        "protein": 30,
+        "carbs": 35,
+        "fat": 28
+      }
+    },
+    {
+      "title": "Aloo Gobi",
+      "cuisine": "Indian",
+      "difficulty": "Easy",
+      "cooking_time": 30,
+      "servings": 4,
+      "ingredients": [
+        {"name": "Cauliflower", "quantity": "1 medium head, cut into florets"},
+        {"name": "Potatoes", "quantity": "2 medium, peeled and cubed"},
+        {"name": "Onion", "quantity": "1, chopped"},
+        {"name": "Tomato", "quantity": "1, chopped"},
+        {"name": "Turmeric Powder", "quantity": "1 tsp"},
+        {"name": "Coriander Powder", "quantity": "1 tsp"},
+        {"name": "Cumin Seeds", "quantity": "1 tsp"}
+      ],
+      "steps": [
+        "Heat oil in a pan and add cumin seeds. Once they splutter, add the chopped onion and sauté until golden.",
+        "Add the chopped tomato, turmeric, and coriander powder. Cook until the tomatoes are soft.",
+        "Add the potatoes and cauliflower, and mix well to coat with the spices.",
+        "Cover and cook on low heat for 15-20 minutes, stirring occasionally, until the vegetables are tender.",
+        "Garnish with cilantro and serve."
+      ],
+      "nutrition": {
+        "calories": 200,
+        "protein": 5,
+        "carbs": 30,
+        "fat": 8
+      }
+    },
+    {
+      "title": "Pesto Pasta",
+      "cuisine": "Italian",
+      "difficulty": "Easy",
+      "cooking_time": 15,
+      "servings": 2,
+      "ingredients": [
+        {"name": "Pasta", "quantity": "8 oz (any shape)"},
+        {"name": "Basil Pesto", "quantity": "1/2 cup"},
+        {"name": "Cherry Tomatoes", "quantity": "1 cup, halved"},
+        {"name": "Parmesan Cheese", "quantity": "1/4 cup, for garnish"}
+      ],
+      "steps": [
+        "Cook pasta according to package directions. Drain, reserving a little pasta water.",
+        "In a large bowl, combine the hot pasta with the basil pesto and cherry tomatoes.",
+        "Toss to combine, adding a splash of the reserved pasta water to loosen the sauce if needed.",
+        "Serve immediately, topped with Parmesan cheese."
+      ],
+      "nutrition": {
+        "calories": 450,
+        "protein": 15,
+        "carbs": 60,
+        "fat": 18
+      }
+    },
+    {
+      "title": "BBQ Pulled Pork Sandwich",
+      "cuisine": "American",
+      "difficulty": "Hard",
+      "cooking_time": 240,
+      "servings": 8,
+      "ingredients": [
+        {"name": "Pork Shoulder", "quantity": "4 lbs"},
+        {"name": "BBQ Sauce", "quantity": "2 cups"},
+        {"name": "Apple Cider Vinegar", "quantity": "1/2 cup"},
+        {"name": "Brown Sugar", "quantity": "1/4 cup"},
+        {"name": "Hamburger Buns", "quantity": "8"}
+      ],
+      "steps": [
+        "Season the pork shoulder with salt and pepper.",
+        "Place in a slow cooker. In a bowl, mix BBQ sauce, apple cider vinegar, and brown sugar. Pour over the pork.",
+        "Cook on low for 6-8 hours, or on high for 4 hours, until the pork is very tender.",
+        "Remove the pork from the slow cooker and shred it with two forks.",
+        "Return the shredded pork to the sauce in the slow cooker and stir to combine.",
+        "Serve the pulled pork on hamburger buns."
+      ],
+      "nutrition": {
+        "calories": 600,
+        "protein": 35,
+        "carbs": 50,
+        "fat": 30
+      }
+    },
+    {
+      "title": "Tom Yum Soup",
+      "cuisine": "Asian",
+      "difficulty": "Medium",
+      "cooking_time": 30,
+      "servings": 4,
+      "ingredients": [
+        {"name": "Shrimp", "quantity": "1 lb"},
+        {"name": "Mushrooms", "quantity": "1 cup, sliced"},
+        {"name": "Lemongrass", "quantity": "2 stalks, bruised"},
+        {"name": "Galangal", "quantity": "1 inch piece, sliced"},
+        {"name": "Kaffir Lime Leaves", "quantity": "4"},
+        {"name": "Fish Sauce", "quantity": "3 tbsp"},
+        {"name": "Lime Juice", "quantity": "1/4 cup"},
+        {"name": "Chili Paste", "quantity": "1 tbsp"}
+      ],
+      "steps": [
+        "In a pot, bring 4 cups of water to a boil. Add lemongrass, galangal, and kaffir lime leaves.",
+        "Simmer for 10 minutes to infuse the flavors.",
+        "Add the mushrooms and shrimp, and cook until the shrimp turn pink.",
+        "Stir in the fish sauce, lime juice, and chili paste.",
+        "Serve hot."
+      ],
+      "nutrition": {
+        "calories": 150,
+        "protein": 20,
+        "carbs": 10,
+        "fat": 3
+      }
+    },
+    {
+      "title": "Baba Ghanoush",
+      "cuisine": "Mediterranean",
+      "difficulty": "Medium",
+      "cooking_time": 60,
+      "servings": 6,
+      "ingredients": [
+        {"name": "Eggplant", "quantity": "2 large"},
+        {"name": "Tahini", "quantity": "1/4 cup"},
+        {"name": "Lemon Juice", "quantity": "3 tbsp"},
+        {"name": "Garlic", "quantity": "2 cloves, minced"},
+        {"name": "Parsley", "quantity": "2 tbsp, chopped"}
+      ],
+      "steps": [
+        "Preheat oven to 400°F (200°C). Prick the eggplants with a fork and roast for 45-60 minutes, until the skin is wrinkled and the inside is very soft.",
+        "Let the eggplants cool, then scoop out the flesh and discard the skin.",
+        "In a bowl, mash the eggplant flesh with a fork.",
+        "Stir in the tahini, lemon juice, and garlic.",
+        "Garnish with chopped parsley and a drizzle of olive oil."
+      ],
+      "nutrition": {
+        "calories": 80,
+        "protein": 2,
+        "carbs": 10,
+        "fat": 4
+      }
+    },
+    {
+      "title": "Dal Makhani",
+      "cuisine": "Indian",
+      "difficulty": "Hard",
+      "cooking_time": 120,
+      "servings": 6,
+      "ingredients": [
+        {"name": "Black Lentils (Urad Dal)", "quantity": "1 cup, soaked overnight"},
+        {"name": "Kidney Beans (Rajma)", "quantity": "1/4 cup, soaked overnight"},
+        {"name": "Tomato Puree", "quantity": "1 cup"},
+        {"name": "Butter", "quantity": "1/2 cup"},
+        {"name": "Heavy Cream", "quantity": "1/2 cup"},
+        {"name": "Ginger-Garlic Paste", "quantity": "2 tbsp"},
+        {"name": "Garam Masala", "quantity": "1 tsp"}
+      ],
+      "steps": [
+        "Pressure cook the soaked lentils and kidney beans until they are very soft.",
+        "In a separate pan, melt butter and sauté the ginger-garlic paste.",
+        "Add the tomato puree and cook until the mixture thickens.",
+        "Add the cooked lentils and beans to the pan. Mash them slightly.",
+        "Simmer on low heat for at least 30 minutes, adding water as needed.",
+        "Stir in the heavy cream and garam masala, and cook for another 5 minutes.",
+        "Serve hot."
+      ],
+      "nutrition": {
+        "calories": 450,
+        "protein": 15,
+        "carbs": 40,
+        "fat": 28
+      }
+    },
+    {
+      "title": "Lasagna",
+      "cuisine": "Italian",
+      "difficulty": "Hard",
+      "cooking_time": 90,
+      "servings": 8,
+      "ingredients": [
+        {"name": "Lasagna Noodles", "quantity": "9"},
+        {"name": "Ground Beef", "quantity": "1 lb"},
+        {"name": "Ricotta Cheese", "quantity": "15 oz"},
+        {"name": "Mozzarella Cheese", "quantity": "1 lb, shredded"},
+        {"name": "Marinara Sauce", "quantity": "24 oz"},
+        {"name": "Egg", "quantity": "1"}
+      ],
+      "steps": [
+        "Preheat oven to 375°F (190°C). Cook lasagna noodles. Brown ground beef and drain fat.",
+        "In a bowl, mix ricotta cheese with egg and half of the mozzarella.",
+        "Spread a layer of marinara sauce in a baking dish. Layer with noodles, ricotta mixture, meat sauce, and mozzarella.",
+        "Repeat the layers, ending with a layer of noodles, sauce, and the remaining mozzarella.",
+        "Bake for 45 minutes, until bubbly. Let it rest for 10 minutes before serving."
+      ],
+      "nutrition": {
+        "calories": 600,
+        "protein": 35,
+        "carbs": 45,
+        "fat": 30
+      }
+    },
+    {
+      "title": "Shepherd's Pie",
+      "cuisine": "American",
+      "difficulty": "Medium",
+      "cooking_time": 60,
+      "servings": 6,
+      "ingredients": [
+        {"name": "Ground Lamb or Beef", "quantity": "1.5 lbs"},
+        {"name": "Potatoes", "quantity": "2 lbs, peeled and cubed"},
+        {"name": "Onion", "quantity": "1, chopped"},
+        {"name": "Carrots", "quantity": "2, chopped"},
+        {"name": "Frozen Peas", "quantity": "1 cup"},
+        {"name": "Beef Broth", "quantity": "1 cup"},
+        {"name": "Milk", "quantity": "1/2 cup"},
+        {"name": "Butter", "quantity": "4 tbsp"}
+      ],
+      "steps": [
+        "Boil potatoes until tender, then mash with milk and butter.",
+        "In a skillet, brown the ground meat with onions and carrots.",
+        "Stir in beef broth and peas, and simmer for 10 minutes.",
+        "Spread the meat mixture in a baking dish. Top with the mashed potatoes.",
+        "Bake at 375°F (190°C) for 30 minutes, or until the top is golden brown."
+      ],
+      "nutrition": {
+        "calories": 550,
+        "protein": 30,
+        "carbs": 40,
+        "fat": 28
+      }
+    },
+    {
+      "title": "Korean Bibimbap",
+      "cuisine": "Asian",
+      "difficulty": "Hard",
+      "cooking_time": 50,
+      "servings": 2,
+      "ingredients": [
+        {"name": "Cooked Rice", "quantity": "2 cups"},
+        {"name": "Beef Sirloin", "quantity": "1/2 lb, thinly sliced"},
+        {"name": "Spinach", "quantity": "1 cup"},
+        {"name": "Carrot", "quantity": "1, julienned"},
+        {"name": "Zucchini", "quantity": "1, julienned"},
+        {"name": "Eggs", "quantity": "2"},
+        {"name": "Gochujang (Korean Chili Paste)", "quantity": "2 tbsp"}
+      ],
+      "steps": [
+        "Marinate beef in soy sauce and sesame oil, then stir-fry until cooked.",
+        "Blanch the spinach, and sauté the carrots and zucchini separately.",
+        "Fry two eggs sunny-side up.",
+        "Assemble the bowls by placing a portion of rice at the bottom, then arranging the beef, vegetables, and a fried egg on top.",
+        "Serve with a dollop of gochujang."
+      ],
+      "nutrition": {
+        "calories": 650,
+        "protein": 35,
+        "carbs": 70,
+        "fat": 25
+      }
+    },
+    {
+      "title": "Moussaka",
+      "cuisine": "Mediterranean",
+      "difficulty": "Hard",
+      "cooking_time": 100,
+      "servings": 6,
+      "ingredients": [
+        {"name": "Eggplant", "quantity": "2 lbs, sliced"},
+        {"name": "Ground Lamb", "quantity": "1 lb"},
+        {"name": "Onion", "quantity": "1, chopped"},
+        {"name": "Tomato Sauce", "quantity": "1 cup"},
+        {"name": "Milk", "quantity": "2 cups"},
+        {"name": "Flour", "quantity": "1/4 cup"},
+        {"name": "Butter", "quantity": "1/4 cup"},
+        {"name": "Nutmeg", "quantity": "1/4 tsp"}
+      ],
+      "steps": [
+        "Salt the eggplant slices and let them sit to draw out moisture. Then fry or bake until golden.",
+        "Brown the ground lamb with onion. Stir in tomato sauce and simmer.",
+        "Make a béchamel sauce by melting butter, whisking in flour, then gradually adding milk. Season with nutmeg.",
+        "In a baking dish, layer the eggplant slices and meat sauce. Pour the béchamel sauce over the top.",
+        "Bake at 350°F (175°C) for 45-60 minutes, until golden and bubbly."
+      ],
+      "nutrition": {
+        "calories": 500,
+        "protein": 25,
+        "carbs": 25,
+        "fat": 35
+      }
+    },
+    {
+      "title": "Fajitas",
+      "cuisine": "Mexican",
+      "difficulty": "Easy",
+      "cooking_time": 30,
+      "servings": 4,
+      "ingredients": [
+        {"name": "Chicken or Steak", "quantity": "1.5 lbs, sliced"},
+        {"name": "Bell Peppers", "quantity": "2, sliced"},
+        {"name": "Onion", "quantity": "1, sliced"},
+        {"name": "Flour Tortillas", "quantity": "8"},
+        {"name": "Fajita Seasoning", "quantity": "1 packet"}
+      ],
+      "steps": [
+        "In a large skillet, cook the sliced chicken or steak until browned.",
+        "Add the bell peppers and onion to the skillet and cook until tender-crisp.",
+        "Stir in the fajita seasoning and a little water. Simmer for 5 minutes.",
+        "Warm the tortillas and serve with the meat and vegetable mixture.",
+        "Offer toppings like guacamole, salsa, and sour cream."
+      ],
+      "nutrition": {
+        "calories": 450,
+        "protein": 35,
+        "carbs": 40,
+        "fat": 15
+      }
+    },
+    {
+      "title": "Samosas",
+      "cuisine": "Indian",
+      "difficulty": "Hard",
+      "cooking_time": 60,
+      "servings": 8,
+      "ingredients": [
+        {"name": "All-Purpose Flour", "quantity": "2 cups"},
+        {"name": "Potatoes", "quantity": "3, boiled and mashed"},
+        {"name": "Peas", "quantity": "1/2 cup"},
+        {"name": "Cumin Seeds", "quantity": "1 tsp"},
+        {"name": "Garam Masala", "quantity": "1 tsp"},
+        {"name": "Oil", "quantity": "for frying"}
+      ],
+      "steps": [
+        "Make a firm dough with flour, water, and a little oil.",
+        "For the filling, heat oil and add cumin seeds. Then add mashed potatoes, peas, and spices. Cook for 5 minutes.",
+        "Roll out small discs from the dough, cut them in half, and form cones.",
+        "Fill the cones with the potato mixture and seal the edges.",
+        "Deep-fry the samosas on low heat until they are golden brown and crispy."
+      ],
+      "nutrition": {
+        "calories": 250,
+        "protein": 5,
+        "carbs": 35,
+        "fat": 10
+      }
+    },
+    {
+      "title": "Gnocchi with Sage Butter Sauce",
+      "cuisine": "Italian",
+      "difficulty": "Medium",
+      "cooking_time": 20,
+      "servings": 2,
+      "ingredients": [
+        {"name": "Potato Gnocchi", "quantity": "1 lb"},
+        {"name": "Butter", "quantity": "1/2 cup"},
+        {"name": "Fresh Sage Leaves", "quantity": "1/4 cup"},
+        {"name": "Parmesan Cheese", "quantity": "for garnish"}
+      ],
+      "steps": [
+        "Cook gnocchi in boiling salted water until they float to the surface. Drain.",
+        "In a skillet, melt the butter over medium heat. Add the sage leaves and cook until the butter is browned and the sage is crispy.",
+        "Add the cooked gnocchi to the skillet and toss to coat in the sage butter sauce.",
+        "Serve immediately with a sprinkle of Parmesan cheese."
+      ],
+      "nutrition": {
+        "calories": 600,
+        "protein": 10,
+        "carbs": 60,
+        "fat": 38
+      }
+    },
+    {
+      "title": "Clam Chowder",
+      "cuisine": "American",
+      "difficulty": "Medium",
+      "cooking_time": 40,
+      "servings": 4,
+      "ingredients": [
+        {"name": "Canned Clams", "quantity": "2 cans (6.5 oz each)"},
+        {"name": "Potatoes", "quantity": "2, peeled and diced"},
+        {"name": "Onion", "quantity": "1, chopped"},
+        {"name": "Celery", "quantity": "1 stalk, chopped"},
+        {"name": "Bacon", "quantity": "4 slices, chopped"},
+        {"name": "Half-and-Half", "quantity": "2 cups"}
+      ],
+      "steps": [
+        "Drain the clams, reserving the juice.",
+        "In a pot, cook the bacon until crisp. Remove bacon and set aside, leaving the fat in the pot.",
+        "Sauté onion and celery in the bacon fat until soft.",
+        "Add the potatoes and reserved clam juice. Bring to a boil and cook until potatoes are tender.",
+        "Stir in the half-and-half and clams. Heat through but do not boil.",
+        "Garnish with the cooked bacon."
+      ],
+      "nutrition": {
+        "calories": 400,
+        "protein": 20,
+        "carbs": 30,
+        "fat": 20
+      }
+    }
+  ]
+  
