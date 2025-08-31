@@ -13,3 +13,4 @@ Werkzeug
 pymongo
 bson
 requests
+gunicorn
